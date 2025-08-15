@@ -1,0 +1,115 @@
+/* Hero Gradient */
+.hero-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Food Card Hover */
+.food-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Browse Button Hover */
+.browse_btn:hover {
+    transform: scale(1.05);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    transition: all 0.3s ease;
+}
+.whatsapp-btn:hover {
+    background: linear-gradient(45deg, #128C7E, #25D366);
+    transform: scale(1.05);
+}
+
+/* Floating WhatsApp */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    animation: bounce 2s infinite;
+}
+
+/* Hide horizontal scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE & Edge */
+    scrollbar-width: none;      /* Firefox */
+}
+
+/* Smooth horizontal scroll */
+.flex.overflow-x-auto {
+    scroll-behavior: smooth;
+}
+
+/* Button hover in horizontal scroll */
+.flex.overflow-x-auto button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.flex.overflow-x-auto button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Smooth page scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Bounce animation for floating button */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Category Cards */
+.category-card {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    cursor: pointer;
+}
+
+/* Restaurant Cards */
+.restaurant-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+/* Out of Stock Overlay */
+.food-card .absolute span {
+    text-align: center;
+}
+
+/* Modal Scroll */
+#foodModal > div {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Input focus */
+input:focus {
+    outline: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-gradient h1 {
+        font-size: 2.5rem;
+    }
+    .hero-gradient p {
+        font-size: 1rem;
+    }
+}
